@@ -139,7 +139,6 @@ public class TransactionProcessService {
             if (!serviceMap.containsKey(transactions.get(i).getServiceId()) && serviceMap.size() < 2){
                 serviceMap.put(transactions.get(i).getServiceId(), transactions.get(i).getServiceId());
             }
-
             if (serviceMap.containsKey(transactions.get(i).getServiceId()) && serviceMap.size() == 2
                     && !prev.equals(transactions.get(i).getServiceId()))
                 return true;
